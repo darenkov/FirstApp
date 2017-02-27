@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     @IBAction func click2(_ sender: Any) {
         //a basic comment
+        //another comment
         lbl2.text = "buttons are cool"
     }
     
@@ -26,8 +27,8 @@ class ViewController: UIViewController {
         
         tapCount = tapCount + 1
         
-        if tapCount >= 10 {
-            lbl2.text = "you tapped the button 10 times or more"
+        if tapCount >= 20 {
+            lbl2.text = "you tapped the button 20 times or more"
         }
         
         print(tapCount)
