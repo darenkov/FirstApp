@@ -9,10 +9,34 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var lblName: UILabel!
+    
+    var tapCount = 0
+    
+    @IBOutlet weak var lbl2: UILabel!
+    
+    @IBAction func click2(_ sender: Any) {
+        //a basic comment
+        lbl2.text = "buttons are cool"
+    }
+    
+    @IBAction func btnTapped(_ sender: Any) {
+        lblName.text = "hello there"
+        
+        tapCount = tapCount + 1
+        
+        if tapCount >= 10 {
+            lbl2.text = "you tapped the button 10 times or more"
+        }
+        
+        print(tapCount)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
